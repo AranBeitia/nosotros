@@ -70,6 +70,7 @@ body {
   height: 30rem;
   margin-bottom: 1rem;
   color: white;
+  filter:brightness(0.9);
 }
 
 .hero h1 {
