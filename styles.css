@@ -24,10 +24,19 @@ ul {
 /** TYPOGRAPHY */
 body {
   font-family: 'Work Sans', sans-serif;
+  background-color: #d3d3d3;
 }
 
+.main-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  width: auto;
+  background-color: white;
+}
+
+
 /**  HEADER */
-header {
+.header {
   position: relative;
   display: flex;
   justify-content: center;
@@ -45,7 +54,6 @@ header {
 
 .menu {
   display: flex;
-  list-style: none;
 }
 
 .menu li:not(:last-child) {
