@@ -96,6 +96,7 @@ body {
 }
 
 .grid-images img {
+  filter: brightness(.6);
   width: 100%;
 }
 
