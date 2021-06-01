@@ -24,6 +24,15 @@ ul {
     padding-left: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cf2c30;
+    font-size: large;
+}
+
 
 /** TYPOGRAPHY */
 
@@ -53,7 +62,7 @@ body {
 .logo {
     position: absolute;
     top: 50%;
-    left: 1rem;
+    left: 0;
     transform: translate(0, -50%);
     text-transform: uppercase;
 }
@@ -242,7 +251,7 @@ body {
 }
 
 .breadcrumb>.b3 {
-    flex-basis: 90%%;
+    flex-basis: 88%;
 }
 
 .breadcrumb>ul {
@@ -252,8 +261,18 @@ body {
 
 /*Main>Header*/
 
+.title {
+    text-align: center;
+    margin: 15px 5px;
+}
+
 .title>h1 {
     font-weight: bold;
+}
+
+.title>p {
+    font-weight: lighter;
+    font-size: small;
 }
 
 
@@ -262,6 +281,8 @@ body {
 .filter {
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
     list-style: none;
 }
 
@@ -286,12 +307,58 @@ body {
 }
 
 
+/*font and padding style*/
+
+.filter>.filter1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.filter1 {
+    margin-right: 15px;
+}
+
+.filter>.filter2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.filter2>option {
+    text-transform: uppercase;
+    font-weight: light;
+    font-size: 12px;
+}
+
+.filter>.filter3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.filter3>option {
+    text-transform: uppercase;
+    font-weight: light;
+    font-size: 12px;
+}
+
+.filter>.filter5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 /*Gallery*/
 
 .grid-women {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.75rem;
+}
+
+.grid-women h2 {
+    font-weight: normal;
+    font-size: 8px;
 }
 
 .grid-category {
