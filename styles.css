@@ -384,3 +384,77 @@ body {
 .grid-category p {
     font-weight: bold;
 }
+
+
+/*Q and A*/
+
+
+/*Main>Header*/
+
+.t-qa {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.t-qa>h1 {
+    color: #cf2c30;
+    text-transform: capitalize;
+    padding: 0 auto;
+}
+
+.bg-text>h1 {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.bg-image {
+    background-image: url(/assets/qa_square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+
+/*QA information*/
+
+.qainformation {
+    margin: auto;
+    font-size: 8px;
+}
+
+.qainformation a {
+    text-decoration: none;
+}
+
+.qainformation a:hover {
+    color: #cf2c30;
+    font-size: large;
+}
+
+.qainformation>ul li {
+    display: flex;
+    margin: 20px 20px 20px 0;
+}
+
+.leftinfo {
+    flex-basis: 40%;
+    height: 50px;
+    text-align: right;
+    border-right: 2px solid #cf2c30;
+    padding-right: 15px;
+    padding-top: auto;
+}
+
+.rightinfo {
+    flex-basis: 60%;
+    height: 50px;
+    text-align: left;
+    padding-left: 15px;
+    width: 50%;
+    padding-top: auto;
+}
