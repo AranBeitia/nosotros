@@ -223,3 +223,30 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+/*WOMEN SHOES GALLERY*/
+
+.grid-women {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0, 75rem;
+}
+
+.grid-category {
+    position: relative;
+}
+
+.grid-category img {
+    filter: brightness(.6);
+    width: 100%;
+}
+
+.grid-category li {
+    text-align: center;
+    font-size: 8px;
+}
+
+.grid-category p {
+    font-weight: bold;
+}
