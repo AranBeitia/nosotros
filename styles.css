@@ -24,7 +24,7 @@ ul {
 /** TYPOGRAPHY */
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: #d3d3d3;
+  background-color: #EEEEEE;
 }
 
 .main-wrapper {
@@ -141,7 +141,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 0px 0px;
+  gap: 2rem 0px;
 }
 
 .grid-item1 {
@@ -214,6 +214,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.new-product-tag {
+  /* TODO PENDIENTE ESTILO */
 }
 
 .inner-container {
