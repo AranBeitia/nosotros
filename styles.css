@@ -188,3 +188,25 @@ body {
 .main-footer a.list-title {
   font-weight: 700;
 }
+
+.social-links {
+  display: flex;
+}
+
+.social-img {
+  height: 1rem;
+}
+
+.social-img {
+  padding-right: 1rem;
+}
+
+.main-footer p {
+  color: white;
+}
+
+.flex-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
