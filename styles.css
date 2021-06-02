@@ -458,3 +458,21 @@ body {
     width: 50%;
     padding-top: auto;
 }
+
+
+/*PRODUCT PAGE*/
+
+.product-grid {
+    display: flex;
+}
+
+.image-gallery {
+    flex-basis: 60%;
+}
+
+.shoe-information {
+    flex-basis: 40%;
+}
+
+
+/*Converse*/
