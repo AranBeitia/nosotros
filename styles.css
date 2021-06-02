@@ -34,6 +34,58 @@ body {
   background-color: white;
 }
 
+/** UTILS */
+.display-flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.padding-x-1 {
+  padding: 0 1rem;
+}
+
+.padding-y-1 {
+  padding: 1rem 0;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.uppercase-bold {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+[flex-between] {
+  display: flex;
+  justify-content: space-between !important;
+}
 
 /**  HEADER */
 .header {
@@ -44,12 +96,22 @@ body {
   height: 4rem;
 }
 
+/** LOGO */
+
 .logo {
   position: absolute;
+  width: 4rem;
   top: 50%;
-  left: 1rem;
+  left: 2rem;
   transform: translate(0, -50%);
   text-transform: uppercase;
+}
+
+/** MENU */
+
+.menu {
+  color: #cf2c30;
+  font-weight: 600;
 }
 
 .menu li:not(:last-child) {
@@ -65,6 +127,7 @@ body {
   background-size: cover;
   height: 30rem;
   margin-bottom: 1rem;
+  text-align: center;
   color: white;
   filter:brightness(0.9);
 }
@@ -137,11 +200,13 @@ body {
   margin-top: .5rem;
 }
 
+/** CATEGORIES GRID */
+
 .grid-categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2rem 0px;
+  grid-gap: 2rem 0.6rem;
 }
 
 .grid-item1 {
@@ -182,6 +247,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .grid-item6 {
@@ -190,6 +256,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .grid-item7 {
@@ -198,6 +265,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .grid-item8 {
@@ -214,44 +282,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.inner-container {
-  padding: 1rem;
-}
+/** CATEGORIES */
 
 .categories-title {
   text-align: center;
   margin: 2rem 10rem;
 }
 
-/** flex utils */
-.display-flex {
-  display: flex;
-}
-
-.flex-start {
-  justify-content: flex-start;
-}
-
-.flex-align-center {
-  align-items: center;
-}
-
-.padding-x-1 {
-  padding: 0 1rem;
-}
-
-.padding-y-1 {
-  padding: 1rem 0;
-}
-
-.margin-right-auto {
-  margin-right: auto;
-}
-
 .nav-secondary-item {
   color: #7C7573;
+}
+
+.grid-images-categories img {
+  position: relative;
+  width: 100%;
 }
 
 .order-by-icon {
@@ -269,12 +316,12 @@ body {
   margin-right: 0.2rem;
 }
 
-.uppercase-bold {
-  text-transform: uppercase;
-  font-weight: 600;
+/** BREADCRUMB **/
+
+.inner-container {
+  padding: 1rem;
 }
 
-/** BREADCRUMB **/
 .breadcrumb a {
   color: black;
   font-size: 0.8rem;
@@ -332,10 +379,6 @@ body {
   font-weight: 700;
 }
 
-.display-flex {
-  display: flex;
-}
-
 .social-img {
   height: 1rem;
 }
@@ -346,18 +389,6 @@ body {
 
 .main-footer p {
   color: white;
-}
-
-/* TODO refactor this class (.flex-column-between) */
-.flex-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-[flex-between] {
-  display: flex;
-  justify-content: space-between !important;
 }
 
 /** PRODUGT DETAIL PAGE */
@@ -486,6 +517,158 @@ body {
   width: 70px;
   padding: .3rem 0;
   text-transform: uppercase;
+  text-align: center;
   background-color: #868382;
   color: white;
+}
+
+.light-product-tag {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 70px;
+  padding: .3rem 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #1E4E6F;
+  color: white;
+}
+
+.light-product-tag::after {
+  display: inline-block;
+  content: '';
+  background-image: url(assets/icons/feather.svg);
+  background-size: 10px 20px;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 20px;
+  margin-left: 0.3rem;
+}
+
+/** F.A.Q. */
+
+.faq-title {
+  text-align: center;
+  color: #cf2c30;
+  padding-bottom: 1rem;
+}
+
+/* TODO REFACTOR CLASS NAME */
+
+.faq-block {
+  padding: 2rem;
+  margin: 0 2rem;
+}
+
+.grid-faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+  border-right: 0.2rem solid #cf2c30;
+}
+
+/** FAQ icons */
+
+.faq-icon-deliver::before {
+  background-image: url("/assets/icons/shipped.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 0.5rem;
+}
+
+.faq-icon-refund::before {
+  background-image: url("/assets/icons/calendar.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 0.5rem;
+}
+
+.faq-icon-payment::before {
+  background-image: url("/assets/icons/secure-payment.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 0.5rem;
+}
+
+.faq-icon-support::before {
+  background-image: url("/assets/icons/information.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 0.5rem;
+}
+
+.faq-icon-warranty::before {
+  background-image: url("/assets/icons/check-mark.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 0.5rem;
+}
+
+/** FAQ ANSWERS */
+
+.faq-answer {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.faq-more-info {
+  /* TODO SEE IF THE DISPLAY REALLY AFFECTS */
+  /* display: flex;
+  align-content: center; */
+  color: #cf2c30;
+}
+
+.faq-more-info::before {
+  background-image: url("/assets/icons/chevron-right-faq.svg");
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px; 
+  height: 15px;
+  content:"";
+  margin-right: 0.05rem;
+}
+
+/**  FAQ HERO SECTION */
+.faq-hero {
+  display: flex;
+  justify-content: center;
+  background-image: url(./assets/faq-hero.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 30rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  filter:brightness(0.9);
+}
+
+.faq-hero h1 {
+  padding-top: 5rem;
+  font-size: 2.4rem;
+  text-decoration: none;
 }
