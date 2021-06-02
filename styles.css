@@ -76,6 +76,10 @@ body {
   font-weight: 600;
 }
 
+.position-relative {
+  position: relative;
+}
+
 .flex-column-between {
   display: flex;
   flex-direction: column;
@@ -506,8 +510,8 @@ body {
   width: 100%;
 }
 
-.position-relative {
-  position: relative;
+.product-select-color {
+  font-size: 0.6rem;
 }
 
 .new-product-tag {
