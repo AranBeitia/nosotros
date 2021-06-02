@@ -240,6 +240,22 @@ body {
 
 .breadcrumb {
     display: flex;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb a:hover {
+    color: #cf2c30;
+    font-size: large;
+}
+
+.breadcrumb a:visited {
+    color: #cf2c30;
 }
 
 .breadcrumb>.b1 {
@@ -466,13 +482,138 @@ body {
     display: flex;
 }
 
-.image-gallery {
+.grid-women {
+    margin-bottom: 30px;
+}
+
+
+/*Image Gallery*/
+
+.img-gallery {
     flex-basis: 60%;
+    text-align: left;
+}
+
+.img-gallery1 {
+    width: 20%;
+    margin: 10px 0;
+}
+
+.img-gallery1:hover {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.img-gallery1:active {
+    position: relative;
+    left: 130px;
+    width: 70%;
 }
 
 .shoe-information {
     flex-basis: 40%;
 }
 
+.color-list {
+    display: inline;
+}
 
-/*Converse*/
+
+/*Shoe Information*/
+
+.shoe-information li {
+    margin: 10px 0;
+}
+
+.shoe-information p {
+    font-size: 8px;
+}
+
+.shoe-big {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.envios {
+    text-decoration: underline;
+}
+
+.color-list {
+    display: flex;
+}
+
+.color-list img {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.color-list-img:hover {
+    padding: 5px;
+    border: 0.5px solid lightgray;
+}
+
+.selecciona-talla {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tallas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.size-guide {
+    text-decoration: underline;
+}
+
+.button-size {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+    margin: auto, 8px;
+    background-color: white;
+}
+
+.button-size:active {
+    background-color: #cf2c30;
+    border: white;
+    color: white;
+}
+
+.big-red-comprar {
+    border: none;
+    padding: 5px 200px;
+    background-color: #cf2c30;
+    color: white;
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.big-red-comprar:hover {
+    background-color: white;
+    border: 1px solid #cf2c30;
+    color: #cf2c30;
+}
+
+.bigger-desc {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.selectdiv {
+    background-color: lightgrey;
+}
+
+.caracteristicas-tecnicas {
+    width: 440px;
+    border-bottom: 1px solid black;
+}
+
+.redes-icon {
+    margin: 15px 0;
+    position: relative;
+    left: 150px;
+}
