@@ -78,6 +78,10 @@ body {
   padding: 2rem 0;
 }
 
+.padding-bottom-y-1 {
+  padding: 0 0 1rem;
+}
+
 .padding-x-2 {
   padding: 0 2rem;
 }
@@ -96,6 +100,10 @@ body {
 
 .bold-text {
   font-weight: 600;
+}
+
+.italic-text {
+  font-style: italic;
 }
 
 .position-relative {
@@ -373,7 +381,7 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-evenly;
-  padding: 3rem 1rem;
+  padding: 3rem 3rem;
   font-size: 10px;
   background-color: #cf2c30;
 }
@@ -382,7 +390,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .main-footer a {
@@ -573,13 +581,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
 .product-related img {
   width: 100%;
-  height: 100%;
 }
 
 .product-select-color {
@@ -713,9 +720,8 @@ body {
 }
 
 .faq-more-info {
-  /* TODO SEE IF THE DISPLAY REALLY AFFECTS */
-  /* display: flex;
-  align-content: center; */
+  display: flex;
+  align-items: center;
   color: #cf2c30;
 }
 
